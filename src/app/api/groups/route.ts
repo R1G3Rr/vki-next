@@ -1,10 +1,10 @@
 import { dbInit } from '@/db/AppDataSource';
-import { getGroupsDb } from '@/db/groupDb';
+import { groupService } from '@/services/GroupService';
 
 export async function GET(): Promise<Response> {
   await dbInit();
 
-  const groups = await getGroupsDb();
+  const groups = await groupService.getGroups();
 
   return new Response(JSON.stringify(groups), {
     headers: {
