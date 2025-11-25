@@ -1,12 +1,12 @@
 @use './main';
 
 :root {  
-  --color: #272727;
-  --color2: #FFF;
-  --color3: #F00;
-  --background: #FFF;
-  --background2: #E1E1E1;
-  --background3: #434343;  
+  --color: #1109e7;
+  --color2: #30af39
+  --color3: #fff700;
+  --background: #fcfdff;
+  --background2: #00ff37;
+  --background3: #8900f1;  
 }
 
 @media (prefers-color-scheme: dark) {
